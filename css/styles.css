@@ -460,13 +460,3 @@ footer span {
     color: rgba(19, 128, 36, 0.60);
     transition: 0.2s;
 }
-
-/* Animations */
-.js-wp-1,
-.js-wp-2 {
-    opacity: 0;
-}
-.js-wp-1.animated,
-.js-wp-2.animated{
-    opacity: 1;
-}

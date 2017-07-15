@@ -1,5 +1,13 @@
 $(document).ready(function() {
-    // Add #Link ScrollTo
+    scrollToInit();
+    InitWaypointAnimations({
+        offset: "60%",
+        animateClass: "wp-animated",
+        animateGroupClass: "wp-animated-group"
+    });
+});
+
+function scrollToInit() {
     $(document).on("click", "a[href^='#']", function(event) {
         var $anchor = $(this);
         $("html, body").stop().animate({
@@ -7,17 +15,4 @@ $(document).ready(function() {
         }, 1500, "easeInOutExpo");
         event.preventDefault();
     });
-    
-    $('.js-wp-1').waypoint(function(direction) {
-        $('.js-wp-1').addClass('animated fadeInDown');
-    }, {
-        offset: "60%"
-    });
-    
-    $('.js-wp-2').waypoint(function(direction) {
-        $('.js-wp-2').addClass('animated fadeInLeft');
-    }, {
-        offset: "60%"
-    });
-});
-
+}
