@@ -13,7 +13,7 @@ body {
 
 @font-face {
     font-family: "Cubano-Regular";
-    src: local("Cubano-regular.otf"), url("fonts/Cubano-regular.otf") format("opentype");
+    src: local("Cubano-regular.otf"), url("fonts/Cubano-regular.ttf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
