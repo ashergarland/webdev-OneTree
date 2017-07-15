@@ -25,13 +25,6 @@ body {
     font-style: normal;
 }
 
-
-/* Bootstrap overrides */
-
-.container {
-    max-width: 1340px;
-}
-
 /* Buttons */
 
 .btn-lg,
@@ -267,7 +260,7 @@ body {
     color: white;
 }
 
-/* Section Cards */
+/* Section Products */
 
 .section-cards {
     padding: 5rem 0;
@@ -275,6 +268,10 @@ body {
 
 .card {
     margin-top: 3rem;
+}
+
+.card-title {
+    height: 3rem;
 }
 
 .card a {
@@ -529,7 +526,6 @@ footer span {
     .square i {
         margin-top: 2rem;
     }
-    
     /* Timeline */
     
     .timeline:before {   /* GREY LINE */
