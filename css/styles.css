@@ -66,7 +66,6 @@ body {
 .navbar-brand:active,
 .navbar-brand:focus {
     font-family: "Cubano-Regular";
-    padding-right: 15px;
 }
 
 #main-nav {
@@ -97,6 +96,7 @@ body {
     font-family: "Cubano-regular";
     font-size: 5rem;
     padding: 14rem 20rem 16rem 3rem;
+    height: 90vh;
 }
 
 .moto {
@@ -108,7 +108,7 @@ body {
 }
 
 .fa-arrow-down {
-    margin-left: 35rem;
+    margin-left: 38rem;
     margin-top: 50px;
     font-size: 2.5rem;
     color: white;
@@ -285,8 +285,7 @@ body {
 }
 
 .card img {
-    height: 180px;
-    max-width: 415px;
+    width: 100%;
     transition: .3s;
 }
 
@@ -459,4 +458,126 @@ footer span {
 .footer .fa-chevron-circle-up:hover {
     color: rgba(19, 128, 36, 0.60);
     transition: 0.2s;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 1921px) {
+    .wall-sticker {
+        font-size: 5rem;
+        padding: 16rem 20rem 10rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 1367px) {
+    .wall-sticker {
+        font-size: 4em;
+        padding: 12rem 16rem 10rem 3rem;
+    }
+    .moto {
+	    font-size: 2.5rem;
+        margin-top: 13rem;
+    }
+    
+    .fa-arrow-down {
+        margin-left: 38.3rem;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .wall-sticker {
+        font-size: 4em;
+        padding: 14rem 20rem 10rem 3rem;
+    }
+    .moto {
+	    font-size: 2rem;
+    }
+    .fa-arrow-down {
+	    margin-left: 33.6rem;
+    }
+    .navbar {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    /* Animations off */
+    
+    * {
+         -webkit-animation: none !important;
+         -moz-animation: none !important;
+         -o-animation: none !important;
+         -ms-animation: none !important;
+         animation: none !important;
+    }
+    
+    /* Cover */
+    
+    .wp-animated {
+        opacity: 1 !important;
+    }
+    
+    .moto {
+	    display:none;
+    }
+    
+    .fa-arrow-down {
+	    display: none;
+    }
+    
+    /*Products */
+    .square i {
+        margin-top: 2rem;
+    }
+    
+    /* Timeline */
+    
+    .timeline:before {   /* GREY LINE */
+        left: 0%;
+    }
+    
+    .timeline > li > .timeline-badge {
+        left: 0%;
+    }
+    
+    .timeline > li.timeline-inverted > .timeline-panel {
+        float: left;
+    }
+    
+    .timeline > li {
+        padding-left: 90px;
+    }
+    
+    .timeline > li:not(.timeline-inverted) {
+        padding-right: 0px;
+    }
+    
+    .timeline > li > .timeline-panel {
+        width: 100%;
+    }
+    
+    /* Numbers */
+    
+    .section-numbers {
+        padding: 5rem 1rem;
+    }
+    
+    .num {
+        width: 125px;
+        height: 125px;
+    }
+    
+    /* Testimonials */
+    
+    .testimonial {
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    
+    /* footer */
+    
+    footer span {
+        font-size: 18px;
+        line-height: 12px;
+    }
 }
