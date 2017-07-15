@@ -2,7 +2,7 @@ html,
 body {
     background: url("../img/pattern.jpg") center center;
     font-size: 16px;
-    font-family: "Cubano-Regular";
+    font-family: "Cubano-Regular", "Arial Black";
 }
 
 /* Colors 
@@ -65,7 +65,7 @@ body {
 .navbar-brand:hover,
 .navbar-brand:active,
 .navbar-brand:focus {
-    font-family: "Cubano-Regular";
+    font-family: "Cubano-Regular", "Arial Black";
 }
 
 #main-nav {
@@ -93,14 +93,14 @@ body {
 
 .wall-sticker {
     background: rgba(0, 0, 0, 0.4); /* press ctrl-e to open color picker */
-    font-family: "Cubano-regular";
+    font-family: "Cubano-regular", "Arial Black";
     font-size: 5rem;
     padding: 14rem 20rem 16rem 3rem;
     height: 90vh;
 }
 
 .moto {
-    font-family: "Cubano-regular";
+    font-family: "Cubano-regular", "Arial Black";
     font-size: 3rem;
     margin-top: 245px;
     margin-left: 350px;
