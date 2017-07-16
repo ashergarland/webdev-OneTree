@@ -497,7 +497,7 @@ footer span {
     }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
     /* Animations off */
     
     * {
@@ -575,5 +575,84 @@ footer span {
     footer span {
         font-size: 18px;
         line-height: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Cover */
+    .wall-sticker {
+        font-size: 3em;
+        padding: 5rem;
+        margin-top: 5vh;
+        height: 90vh;
+    }
+    
+    /* Timeline */
+    .section-timeline {
+        padding-top: 3rem;
+    }
+    
+    .timeline:before {   /* GREY LINE */
+        left: 7%;
+    }
+    
+    .timeline > li > .timeline-badge {
+        left: 7%;
+    }
+    
+    .timeline > li,
+    .timeline > li.timeline-inverted {
+        padding-left: 60px;
+    }
+    
+    /* Features */
+    .section-feature {
+        padding: 3rem 0;
+    }
+    
+    /* Products */
+    .section-cards {
+        padding: 3rem 0;
+    }
+    
+    /* Numbers */
+    .section-numbers {
+        padding: 3rem 1rem;
+    }
+    
+    .num {
+        width: 125px;
+        height: 125px;
+    }
+    
+    /* Testimonials */
+    .section-testimonials {
+        padding-top: 3rem;
+    }
+    
+    .testimonial-img {
+        width: 60%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 1rem;
+    }
+    
+    .testimonial {
+        margin-top: 0rem;
+    }
+    
+    /* Contact */
+    .section-contact {
+        padding: 3rem 0;
+    }
+    .section-contact .heading {
+        margin-bottom: 1rem;
+    }
+    
+    /* Footer */
+    .social-links {
+        margin: 1rem 0;
     }
 }
