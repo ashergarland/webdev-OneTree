@@ -84,25 +84,48 @@ body {
     color: white;
 }
 
+.cover-content {
+    margin: auto 0;
+}
+
 .wall-sticker {
     background: rgba(0, 0, 0, 0.4); /* press ctrl-e to open color picker */
     font-family: "Cubano-regular", "Arial Black";
+    height: 80vh;
+    text-align: center;
+}
+
+.wall-sticker-content {
+    padding-top: 45%;
+}
+
+.moto-content {
+    margin-top:45%;
+}
+
+.wall-sticker .lead {
     font-size: 5rem;
-    padding: 14rem 20rem 16rem 3rem;
-    height: 90vh;
+    display: inline-block;
+    text-align: left;
 }
 
 .moto {
     font-family: "Cubano-regular", "Arial Black";
     font-size: 3rem;
+    /*
     margin-top: 245px;
-    margin-left: 350px;
+    margin-left: 350px; */
+    text-align: center;
+}
+
+.arrow-down-content {
     text-align: center;
 }
 
 .fa-arrow-down {
+    /*
     margin-left: 38rem;
-    margin-top: 50px;
+    margin-top: 50px; */
     font-size: 2.5rem;
     color: white;
     transition: 0.3s;
@@ -255,7 +278,7 @@ body {
 .section-parallax {
     text-align: center;
     background: url(../img/trees.jpg) center repeat fixed;
-    padding: 140px 0;
+    padding: 7rem 0;
     background-size: cover;
     color: white;
 }
@@ -305,7 +328,7 @@ body {
     border-radius: 100px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 90px;
+    margin-top: 5rem;
 }
 
 .num-content {
@@ -459,45 +482,51 @@ footer span {
 
 /* Responsiveness */
 
-@media only screen and (max-width: 1921px) {
-    .wall-sticker {
-        font-size: 5rem;
-        padding: 16rem 20rem 10rem 3rem;
+@media only screen and (max-height: 800px) {
+    .wall-sticker-content {
+        padding-top: 20%;
     }
-}
 
-@media only screen and (max-width: 1367px) {
-    .wall-sticker {
-        font-size: 4em;
-        padding: 12rem 16rem 10rem 3rem;
-    }
-    .moto {
-	    font-size: 2.5rem;
-        margin-top: 13rem;
+    .moto-content {
+        margin-top:20%;
     }
     
-    .fa-arrow-down {
-        margin-left: 38.3rem;
+    .section-feature,
+    .section-cards,
+    .section-contact{
+        padding: 3rem 0;
+    }
+    
+    .section-timeline {
+        padding-top: 3rem;
+    }
+    
+    .section-parallax {
+        padding: 5rem 0;
+    }
+    
+    .section-numbers {
+        padding: 3rem 0;
+    }
+    
+    .num {
+        margin-top: 3rem;
     }
 }
 
-@media only screen and (max-width: 1025px) {
-    .wall-sticker {
-        font-size: 4em;
-        padding: 14rem 20rem 10rem 3rem;
+@media only screen and (max-width: 1155px) {
+    .wall-sticker-content .lead {
+        font-size: 4rem;
     }
     .moto {
-	    font-size: 2rem;
-    }
-    .fa-arrow-down {
-	    margin-left: 33.6rem;
+	    font-size: 2.75rem;
     }
     .navbar {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 959px) {
     /* Animations off */
     
     * {
@@ -510,19 +539,18 @@ footer span {
     
     /* Cover */
     
+    .wall-sticker-content .lead {
+        font-size: 3rem;
+    }
+    .moto {
+	    font-size: 2rem;
+    }
+    
     .wp-animated {
         opacity: 1 !important;
     }
     
-    .moto {
-	    display:none;
-    }
-    
-    .fa-arrow-down {
-	    display: none;
-    }
-    
-    /*Products */
+    /* Products */
     .square i {
         margin-top: 2rem;
     }
@@ -578,13 +606,26 @@ footer span {
     }
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width : 767px) {
+    
+    .moto {
+	    display:none;
+    }
+    
+    .fa-arrow-down {
+	    display: none;
+    }
+    
     /* Cover */
     .wall-sticker {
-        font-size: 3em;
         padding: 5rem;
         margin-top: 5vh;
         height: 90vh;
+    }
+    
+    .wall-sticker-content .lead {
+        font-size: 3em;
     }
     
     /* Timeline */
