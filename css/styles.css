@@ -112,9 +112,6 @@ body {
 .moto {
     font-family: "Cubano-regular", "Arial Black";
     font-size: 3rem;
-    /*
-    margin-top: 245px;
-    margin-left: 350px; */
     text-align: center;
 }
 
@@ -123,9 +120,6 @@ body {
 }
 
 .fa-arrow-down {
-    /*
-    margin-left: 38rem;
-    margin-top: 50px; */
     font-size: 2.5rem;
     color: white;
     transition: 0.3s;
