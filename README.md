@@ -2,6 +2,8 @@
 
 An aesthetically modern responsive website made with HTML5, CSS3, Bootstrap 4, jQuery 3.2.1, Animate.css, and Waypoints
 
+> Note: All names, images, branding, icons, and text used in the making of this are fictional and only used to demo.
+
 Check out the live demo here [http://onetree.azurewebsites.net/](http://onetree.azurewebsites.net/)
 
 Libraries used:
